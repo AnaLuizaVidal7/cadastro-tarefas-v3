@@ -1,15 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eef2f7;
+    background-color: #fffdfcc0;
   }
   
   .container {
     max-width: 600px;
     margin: 40px auto;
-    background: white;
+    background: #FFF9F2;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px #dd8f8f;
   }
   
   h1, h3 {
@@ -29,11 +29,12 @@ body {
   }
   
   button {
-    background-color: #2563eb;
+    background-color: #dd8f8f;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
+
   }
   
   table {
@@ -42,13 +43,13 @@ body {
   }
   
   th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #555555;
     padding: 8px;
     text-align: center;
   }
   
   th {
-    background-color: #2563eb;
-    color: white;
+    background-color: #dd8f8f;
+    color: #ffffff;
   }
   
