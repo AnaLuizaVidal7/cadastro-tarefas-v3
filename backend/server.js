@@ -16,21 +16,21 @@
 // });
 
 const express = require("express");
-const corns = require("corns");
+const cors = require("cors");
 const tarefaRoutes = require("./routes/tarefaRoutes");
 const sequelize = require("./database/db");
 const app = express();
 
 //MIDDLEWARE 
-app.use(corns());
+app.use(cors());
 app.use(express.json());
 
 //ROTAS
-app.use("/tarefas",tarefaRoutes);
+app.use("/",tarefaRoutes);
 
 //SINCRONIZAÇÃO COM O BANCO - INICIAR O SERVIDOR
 sequelize.sync()
-  .than(() => {
+  .then(() => {
     console.log("Banco de dados sincronizado com sucesso");
     app.listen(3000, () => {
       console.log("Servidor rodando em http://localhost:3000")
